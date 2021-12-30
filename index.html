@@ -54,8 +54,33 @@
 					<button type="button" class="modal-cross" data-modal-close>
 						<p class="cross">&#10006;</p>
 					</button>
-					<form>
-						<b class="modal-headline">Оставьте свои данные, мы вам перезвоним</b>
+					<b class="modal-headline">Оставьте свои данные, мы вам перезвоним</b>
+					<form class="modal-form">
+						<label class="form-input-box" for="Name">
+							Имя
+							<input type="text" name="" class="form-input" />
+							<svg class="form-input-icon">
+								<use href=""></use>
+							</svg>
+						</label>
+						<label class="form-input-box" for="Name">
+							Телефон
+							<input type="tel" name="" class="form-input" />
+						</label>
+						<label class="form-input-box" for="Name">
+							Почта
+							<input type="email" name="" class="form-input" />
+						</label>
+						<label class="form-input-box" for="Name">
+							Комментарий
+							<textarea name="" id="" class="form-input"></textarea>
+						</label>
+						<label>
+							<input type="checkbox" />
+							Соглашаюсь с рассылкой и принимаю
+							<a href="">Условия договора</a>
+						</label>
+						<button type="submit" class="form-submit-button">Отправить</button>
 					</form>
 				</div>
 			</div>
