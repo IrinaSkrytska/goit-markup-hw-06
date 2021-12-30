@@ -571,27 +571,107 @@ img {
 	text-align: center;
 	letter-spacing: 0.03em;
 }
-.form-input {
-	width: 100%;
-	height: 40px;
-	border: 1px solid rgba(33, 33, 33, 0.2);
-	border-radius: 4px;
-	margin-top: 4px;
-	position: relative;
-}
 
 .form-input-box {
 	display: block;
 	margin-bottom: 28px;
 	color: #757575;
 	font-size: 12px;
+	position: relative;
+}
+.form-input,
+.form-message {
+	width: 100%;
+	height: 40px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	margin-top: 4px;
+	padding: 0 11px 0 40px;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:focus {
+	outline: none;
+	border: 1px solid #2196f3;
+}
+.form-message:focus {
+	outline: none;
+	border: 1px solid #2196f3;
+}
+.form-input:focus + svg {
+	fill: #2196f3;
 }
 .form-input-icon {
 	display: block;
 	width: 18px;
 	height: 18px;
-	background-color: #212121;
 	position: absolute;
 	top: 50%;
 	left: 12px;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-message {
+	font-family: inherit;
+	resize: none;
+	height: 120px;
+	width: 450px;
+	padding: 12px 16px;
+}
+.form-message::placeholder {
+	color: rgba(117, 117, 117, 0.5);
+}
+
+.policy-box {
+	font-size: 14px;
+	line-height: 1.7;
+	color: #757575;
+	display: flex;
+	margin-bottom: 20px;
+	align-items: center;
+}
+.policy-box::before {
+	content: "";
+	width: 16px;
+	height: 15px;
+	border: 1px solid #212121;
+	border-radius: 2px;
+	margin-right: 9px;
+}
+.policy-checkbox:checked + .policy-box::before {
+	background-color: #2196f3;
+	background-image: ;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.policy-checkbox:focus + .policy-box::before {
+	border: 1px solid #2196f3;
+}
+.policy-box a {
+	color: #2196f3;
+	text-decoration: underline;
+}
+.policy-checkbox {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.form-submit-button {
+	font-size: 16px;
+	line-height: 1.9;
+	letter-spacing: 0.06em;
+	color: #ffffff;
+	display: block;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	width: 200px;
+	height: 50px;
+	background: #188ce8;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
 }

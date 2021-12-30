@@ -58,26 +58,32 @@
 					<form class="modal-form">
 						<label class="form-input-box" for="Name">
 							Имя
-							<input type="text" name="" class="form-input" />
+							<input type="text" name="user-name" class="form-input" required />
+							<svg class="form-input-icon">
+								<use href="./images/sprite.svg#icon-envelope"></use>
+							</svg>
+						</label>
+						<label class="form-input-box" for="Name">
+							Телефон
+							<input type="tel" name="" class="form-input" pattern="[0-9]{10}" title="050950823141" required />
 							<svg class="form-input-icon">
 								<use href=""></use>
 							</svg>
 						</label>
 						<label class="form-input-box" for="Name">
-							Телефон
-							<input type="tel" name="" class="form-input" />
-						</label>
-						<label class="form-input-box" for="Name">
 							Почта
 							<input type="email" name="" class="form-input" />
+							<svg class="form-input-icon">
+								<use href=""></use>
+							</svg>
 						</label>
 						<label class="form-input-box" for="Name">
 							Комментарий
-							<textarea name="" id="" class="form-input"></textarea>
+							<textarea name="user-message" id="" class="form-message" placeholder="Введите текст"></textarea>
 						</label>
-						<label>
-							<input type="checkbox" />
-							Соглашаюсь с рассылкой и принимаю
+						<input type="checkbox" class="policy-checkbox" id="policy-check" />
+						<label for="policy-check" class="policy-box">
+							Соглашаюсь с рассылкой и принимаю &nbsp;
 							<a href="">Условия договора</a>
 						</label>
 						<button type="submit" class="form-submit-button">Отправить</button>
