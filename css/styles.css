@@ -145,6 +145,7 @@ header {
 }
 .advantages {
 	margin-right: 30px;
+	width: 270px;
 }
 .sub-title {
 	font-weight: 400px;
@@ -162,7 +163,9 @@ header {
 	display: flex;
 	justify-content: center;
 }
-
+.our-mission-section {
+	padding-top: 0;
+}
 .mission-image {
 	display: flex;
 	margin-right: 30px;
@@ -361,7 +364,7 @@ button:focus {
 	align-items: baseline;
 }
 .subscribe-footer {
-	margin-left: 93px;
+	margin-left: auto;
 }
 .subscribe-form {
 	margin-top: 20px;
@@ -404,13 +407,13 @@ button:focus {
 /*------portfolio header-----*/
 
 .portfolio-header {
-	text-align: center;
-	font-weight: bold;
-	font-size: 36px;
-	line-height: 1.7;
 	overflow: hidden;
 	opacity: 0;
-	margin: 0;
+	width: 1px;
+	height: 1px;
+	margin-bottom: -1px;
+	border: 0;
+	clip: rect(0 0 0 0);
 	position: relative;
 }
 .line::after {
@@ -571,10 +574,12 @@ img {
 	text-align: center;
 	letter-spacing: 0.03em;
 }
-
+.mail-input {
+	color: rgba(255, 255, 255, 0.6);
+}
 .form-input-box {
 	display: block;
-	margin-bottom: 28px;
+	margin-bottom: 10px;
 	color: #757575;
 	font-size: 12px;
 	position: relative;
@@ -638,7 +643,7 @@ img {
 }
 .policy-checkbox:checked + .policy-box::before {
 	background-color: #2196f3;
-	background-image: ;
+	background-image: url(../images/checkbox.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -661,6 +666,7 @@ img {
 	overflow: hidden;
 }
 .form-submit-button {
+	margin: 0 auto;
 	font-size: 16px;
 	line-height: 1.9;
 	letter-spacing: 0.06em;

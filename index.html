@@ -49,46 +49,7 @@
 		</header>
 		<main class="page-main">
 			<!--Hero-->
-			<div class="backdrop is-hidden" data-modal>
-				<div class="modal">
-					<button type="button" class="modal-cross" data-modal-close>
-						<p class="cross">&#10006;</p>
-					</button>
-					<b class="modal-headline">Оставьте свои данные, мы вам перезвоним</b>
-					<form class="modal-form">
-						<label class="form-input-box" for="Name">
-							Имя
-							<input type="text" name="user-name" class="form-input" required />
-							<svg class="form-input-icon">
-								<use href="./images/sprite.svg#icon-envelope"></use>
-							</svg>
-						</label>
-						<label class="form-input-box" for="Name">
-							Телефон
-							<input type="tel" name="" class="form-input" pattern="[0-9]{10}" title="050950823141" required />
-							<svg class="form-input-icon">
-								<use href=""></use>
-							</svg>
-						</label>
-						<label class="form-input-box" for="Name">
-							Почта
-							<input type="email" name="" class="form-input" />
-							<svg class="form-input-icon">
-								<use href=""></use>
-							</svg>
-						</label>
-						<label class="form-input-box" for="Name">
-							Комментарий
-							<textarea name="user-message" id="" class="form-message" placeholder="Введите текст"></textarea>
-						</label>
-						<input type="checkbox" class="policy-checkbox" id="policy-check" />
-						<label for="policy-check" class="policy-box">
-							Соглашаюсь с рассылкой и принимаю &nbsp;
-							<a href="">Условия договора</a>
-						</label>
-						<button type="submit" class="form-submit-button">Отправить</button>
-					</form>
-				</div>
+		
 			</div>
 			<section class="hero">
 				<h1 class="title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
@@ -135,7 +96,7 @@
 				</div>
 			</section>
 			<!--Our mission-->
-			<section class="section">
+			<section class="section our-mission-section">
 				<h2 class="section-title">Чем мы занимаемся</h2>
 				<div class="container">
 					<ul class="our-mission">
@@ -434,6 +395,46 @@
 				</div>
 			</div>
 		</footer>
+			<div class="backdrop is-hidden" data-modal>
+				<div class="modal">
+					<button type="button" class="modal-cross" data-modal-close>
+						<p class="cross">&#10006;</p>
+					</button>
+					<b class="modal-headline">Оставьте свои данные, мы вам перезвоним</b>
+					<form class="modal-form">
+						<label class="form-input-box" for="Name">
+							Имя
+							<input type="text" name="user-name" class="form-input" required />
+							<svg class="form-input-icon">
+								<use href="./images/sprite.svg#icon-email-mail"></use>
+							</svg>
+						</label>
+						<label class="form-input-box" for="Name">
+							Телефон
+							<input type="tel" name="" class="form-input" pattern="[0-9]{10}" title="050950823141" required />
+							<svg class="form-input-icon">
+								<use href="./images/sprite.svg#icon-phone-tel"></use>
+							</svg>
+						</label>
+						<label class="form-input-box" for="Name">
+							Почта
+							<input type="email" name="" class="form-input" />
+							<svg class="form-input-icon">
+								<use href="./images/sprite.svg#icon-person-name"></use>
+							</svg>
+						</label>
+						<label class="form-input-box" for="Name">
+							Комментарий
+							<textarea name="user-message" id="" class="form-message" placeholder="Введите текст"></textarea>
+						</label>
+						<input type="checkbox" class="policy-checkbox" id="policy-check" />
+						<label for="policy-check" class="policy-box">
+							Соглашаюсь с рассылкой и принимаю &nbsp;
+							<a href="">Условия договора</a>
+						</label>
+						<button type="submit" class="form-submit-button">Отправить</button>
+					</form>
+				</div>
 		<script src="./js/modal.js"></script>
 	</body>
 </html>
