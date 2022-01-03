@@ -2,12 +2,14 @@
 	--main-color: #212121;
 	--sec-color: #757575;
 	--active-color: #2196f3;
+	--sec-background-color: #2f303a;
+	--sec-active-color: #757575;
 }
 body {
 	font-family: "Roboto", sans-serif;
 	font-style: normal;
 	font-size: 14px;
-	color: #212121;
+	color: var(--main-color);
 }
 .section {
 	padding: 94px 0;
@@ -24,7 +26,7 @@ body {
 	height: 1px;
 	margin-bottom: -1px;
 }
-/*------header-----*/
+/*---------------------------------------HEADER----------------------------*/
 nav,
 .main-links,
 .main-contacts,
@@ -55,7 +57,7 @@ header .logo {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
-	color: #212121;
+	color: var(--main-color);
 	display: flex;
 	margin-right: 50px;
 	padding: 32px 0;
@@ -68,7 +70,7 @@ header .logo {
 	content: "";
 	width: 48px;
 	height: 4px;
-	background: #2196f3;
+	background: var(--active-color);
 	border-radius: 2px;
 	position: absolute;
 	bottom: -1px;
@@ -78,7 +80,7 @@ header .logo {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
-	color: #757575;
+	color: var(--sec-active-color);
 	padding: 32px 0;
 	margin-left: 50px;
 	display: flex;
@@ -97,10 +99,14 @@ header {
 .contacts:hover {
 	color: var(--active-color);
 }
-/*-----first section----*/
+.mail-icon {
+	fill: currentColor;
+	margin-right: 10px;
+}
+/*--------------------------------------HERO------------------------------------*/
 
 .hero {
-	background-color: #2f303a;
+	background-color: var(--sec-background-color);
 	padding: 200px 0;
 	max-width: 1600px;
 	margin: 0 auto;
@@ -131,7 +137,7 @@ header {
 	margin-top: 44px;
 	padding: 10px 32px;
 }
-/*----benefits of work with us-----*/
+/*-------------------------------BENEFITS-------------------------------------------*/
 
 .our-benefits {
 	display: flex;
@@ -151,7 +157,7 @@ header {
 	font-weight: 400px;
 	font-size: 14px;
 	line-height: 1.8;
-	color: #757575;
+	color: var(--sec-active-color);
 	padding-top: 10px;
 	letter-spacing: 0.03em;
 }
@@ -195,7 +201,7 @@ header {
 	text-align: center;
 	margin-bottom: 50px;
 }
-/*-----Our team------*/
+/*-------------------------OUR TEAM------------------------------*/
 .team-section {
 	background-color: #f5f4fa;
 }
@@ -242,13 +248,13 @@ header {
 }
 .icons-design:hover,
 .icons-design:focus {
-	background: #2196f3;
+	background: var(--active-color);
 	fill: #fff;
 }
 .links-design:not(:first-child) {
 	margin-left: 10px;
 }
-/*-------Customers--------*/
+/*---------------------------CUSTOMERS-----------------------------*/
 .customers {
 	display: flex;
 }
@@ -281,13 +287,13 @@ header {
 	height: 60px;
 }
 
-/*-----footer-----*/
+/*---------------------FOOTER-----------------*/
 .logo-footer {
 	display: inline-block;
 	color: #fff;
 }
 .footer {
-	background: #2f303a;
+	background: var(--sec-background-color);
 	padding: 60px 0;
 }
 
@@ -299,7 +305,7 @@ header {
 	font-size: 14px;
 	line-height: 1.7;
 	color: #ffffff;
-	background-color: #2f303a;
+	background-color: var(--sec-background-color);
 	display: flex;
 }
 .address {
@@ -307,7 +313,7 @@ header {
 }
 .communication {
 	color: rgba(255, 255, 255, 0.6);
-	background-color: #2f303a;
+	background-color: var(--sec-background-color);
 	padding-top: 9px;
 }
 
@@ -316,7 +322,7 @@ button:hover {
 	background-color: #2196f3;
 }
 button:focus {
-	color: #212121;
+	color: var(--main-color);
 	background-color: #f5f4fa;
 }
 
@@ -351,7 +357,7 @@ button:focus {
 	margin-right: 10px;
 }
 .twitter {
-	background: #2196f3;
+	background: var(--active-color);
 }
 
 .footer-icons {
@@ -363,6 +369,7 @@ button:focus {
 	display: flex;
 	align-items: baseline;
 }
+/*----------------FOOTER E-MAIL-FORM-------------*/
 .subscribe-footer {
 	margin-left: auto;
 }
@@ -373,7 +380,7 @@ button:focus {
 	display: flex;
 }
 .mail-input {
-	background: #2f303a;
+	background: var(--sec-background-color);
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
@@ -393,7 +400,7 @@ button:focus {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background: #2196f3;
+	background: var(--active-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	width: 200px;
@@ -421,7 +428,7 @@ button:focus {
 	position: absolute;
 	width: 78px;
 	height: 4px;
-	background: #2196f3;
+	background: var(--active-color);
 	border-radius: 2px;
 	margin: 0;
 	bottom: -1px;
@@ -461,26 +468,6 @@ button:focus {
 .clients-photo:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.box {
-	position: relative;
-	overflow: hidden;
-}
-
-.overlay {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	background: #2196f3e5;
-	font-size: 18px;
-	line-height: 1.6;
-	letter-spacing: 0.03em;
-	color: #ffffff;
-	top: 0%;
-	bottom: 0%;
-	transform: translateY(100%);
-	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-	padding: 60px 24px;
-}
 img {
 	display: block;
 	max-width: 100%;
@@ -498,13 +485,13 @@ img {
 	font-size: 18px;
 	line-height: 2;
 	padding: 20px 24px 4px 24px;
-	color: #212121;
+	color: var(--main-color);
 }
 .image-description {
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 1.9;
-	color: #757575;
+	color: var(--sec-active-color);
 	padding: 4px 24px 20px 24px;
 }
 .clients > .clients-photo:nth-child(3n) {
@@ -513,10 +500,29 @@ img {
 .clients > .clients-photo:nth-last-child(-n + 3) {
 	margin-bottom: 0;
 }
-.mail-icon {
-	fill: currentColor;
-	margin-right: 10px;
+/*-------------------MODAL WINDOW------------------*/
+
+.box {
+	position: relative;
+	overflow: hidden;
 }
+
+.overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: var(--active-color);
+	font-size: 18px;
+	line-height: 1.6;
+	letter-spacing: 0.03em;
+	color: #ffffff;
+	top: 0%;
+	bottom: 0%;
+	transform: translateY(100%);
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	padding: 60px 24px;
+}
+
 .backdrop {
 	top: 0;
 	left: 0;
@@ -559,7 +565,7 @@ img {
 	align-items: center;
 }
 .cross:hover {
-	color: #2196f3;
+	color: var(--active-color);
 }
 .modal-cross:hover {
 	background-color: #fff;
@@ -574,13 +580,14 @@ img {
 	text-align: center;
 	letter-spacing: 0.03em;
 }
+
 .mail-input {
 	color: rgba(255, 255, 255, 0.6);
 }
 .form-input-box {
 	display: block;
 	margin-bottom: 10px;
-	color: #757575;
+	color: var(--sec-active-color);
 	font-size: 12px;
 	position: relative;
 }
@@ -596,14 +603,14 @@ img {
 }
 .form-input:focus {
 	outline: none;
-	border: 1px solid #2196f3;
+	border: 1px solid var(--active-color);
 }
 .form-message:focus {
 	outline: none;
-	border: 1px solid #2196f3;
+	border: 1px solid var(--active-color);
 }
 .form-input:focus + svg {
-	fill: #2196f3;
+	fill: var(--active-color);
 }
 .form-input-icon {
 	display: block;
@@ -628,7 +635,7 @@ img {
 .policy-box {
 	font-size: 14px;
 	line-height: 1.7;
-	color: #757575;
+	color: var(--sec-active-color);
 	display: flex;
 	margin-bottom: 20px;
 	align-items: center;
@@ -637,22 +644,22 @@ img {
 	content: "";
 	width: 16px;
 	height: 15px;
-	border: 1px solid #212121;
+	border: 1px solid var(--main-color);
 	border-radius: 2px;
 	margin-right: 9px;
 }
 .policy-checkbox:checked + .policy-box::before {
-	background-color: #2196f3;
+	background-color: var(--active-color);
 	background-image: url(../images/checkbox.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
 }
 .policy-checkbox:focus + .policy-box::before {
-	border: 1px solid #2196f3;
+	border: 1px solid var(--active-color);
 }
 .policy-box a {
-	color: #2196f3;
+	color: var(--active-color);
 	text-decoration: underline;
 }
 .policy-checkbox {
