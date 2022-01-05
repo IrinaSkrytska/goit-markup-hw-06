@@ -356,10 +356,9 @@ button:focus {
 .social-links-design:not(:last-child) {
 	margin-right: 10px;
 }
-.twitter {
-	background: var(--active-color);
+.networks-design:hover {
+	background-color: var(--active-color);
 }
-
 .footer-icons {
 	display: flex;
 	margin-top: 20px;
@@ -459,7 +458,7 @@ button:focus {
 	flex-wrap: wrap;
 }
 .clients > .clients-photo {
-	flex-basis: calc(100% / 3 -30px);
+	flex-basis: calc(100% / 3 - 30px);
 	margin-right: 30px;
 	margin-bottom: 30px;
 	background: #ffffff;
@@ -564,11 +563,13 @@ img {
 	justify-content: center;
 	align-items: center;
 }
-.cross:hover {
-	color: var(--active-color);
-}
 .modal-cross:hover {
+	fill: var(--active-color);
 	background-color: #fff;
+}
+.close-cross {
+	width: 11px;
+	height: 11px;
 }
 .modal-form {
 	margin-top: 12px;
