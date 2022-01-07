@@ -356,7 +356,7 @@ button:focus {
 .social-links-design:not(:last-child) {
 	margin-right: 10px;
 }
-.networks-design:hover {
+.networks:hover {
 	background-color: var(--active-color);
 }
 .footer-icons {
